@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background-color: whitesmoke;">
+
+  <style>
+    
+    .menu{
+      border-bottom: 1px solid grey;
+     
+    }
+      .numberCircle {
+          position: absolute;
+          border-radius: 50%;
+          width: 22px;
+          height: 22px;
+          padding: 8px;
+          top: 180px;
+          
+          background:black;
+         
+          color: white;
+          text-align: center;
+      
+      
+          font: 12px Arial, sans-serif;
+
+
+
+          
+      }
+
+      .clip_img {
+         clip-path:inset(7% 5% 1% 7%);
+         width:132px;
+         height:12em;
+         left: -9px;
+         margin-top: -8px;
+         margin-left: -9px;
+
+      }
+
+      .clip_img_dp{
+       margin-left: 15px;
+      }
+    
+     .bgblock{
+
+      background-color: white;
+      
+      margin: 20px 20px 20px 20px;
+
+     }
+     .card{
+       width: 120px;
+     }
+
+
+     @media screen and (max-width:480px) {
+        .clip_img{
+            float:left;
+            display:inline;
+            width: 100px;
+            height: 100px;
+           
+        }
+        .card{
+          margin-left:10px;
+          margin-bottom: 20px;
+          margin-top: -100px;
+          width: 490px;
+        }
+
+        .clip_img_dp{
+            float:left;
+            display:inline;
+            margin-top:-100px;
+            margin-left: 200px;
+           
+        }
+        .card-title{
+            float:left;
+            display:inline;
+            margin-left: 400px;
+            margin-top: -90px;
+
+        }
+        .card-text{
+            float:left;
+            display:inline;
+            margin-left: 400px;
+            margin-top: -60px;
+
+        }
+      
+        .card-body{
+           margin-bottom: 10px;
+            
+        }
+        .csize{
+            height: 45px;
+            margin-bottom: 50px;
+            width: 400px;
+        }
+        .firstcard{
+          margin-left: -20px;
+          margin-top: -100px;
+        }
+        .cardsix{
+          margin-left: -35px;
+        }
+        .bgblock{
+          height: 900px;
+          width: 500px;
+      }
+       }
+
+     
+  </style>
+  <div class="bgblock">
+  <h2 style="padding-top: 50px; padding-left: 40px;font-size:x-large;">Leaderboard  </h2>
+  <div class="menu">
+  <nav style="padding-top: 50px; padding-left: 50px;font-size: 20px;">
+    <a href="" style="font-weight:bolder;color:black;">Weekly </a>
+    <a href=""style="font-weight:400;margin-left :40px;color:black;">Monthly</a>
+    <a href=""style="font-weight:400;margin-left :40px;color:black;">Overall</a>
+  </nav>
+  </div>
+ 
+   
+    <div class="card-deck" style="padding-top: 200px;">
+        <div class="csize">
+          <div class="firstcard">
+        <div class="card" style="margin-left:30px; height:250px;">
+                 <div class="clip_img">
+                <img class="card-img-top" src="./assets/one.png" alt="Card image cap" style="" >
+            </div>
+          <div class="card-body">
+              <div class="clip_img_dp">
+                <img class="card-img-top" src="./assets/selena.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
+             </div>
+            <div class="numberCircle" style="margin-left: 78px; margin-top: -20px;">3</div>
+            <h5 class="card-title">Selena Gomez</h5>
+            <p class="card-text">2500 pts</p>
+           
+          </div>
+        </div>
+      </div>
+    </div>     
+    <!-- card height trail in the mobile view end  -->
+    <div class="csize">
+            <div class="card" style=" height:250px;">
+            <div class="clip_img">
+           <img class="card-img-top" src="./assets/two.png" alt="Card image cap" style="" >
+       </div>
+     <div class="card-body">
+         <div class="clip_img_dp">
+          <img class="card-img-top" src="./assets/ariana.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
+        </div>
+       <div class="numberCircle" style="margin-left: 80px; margin-top: -20px;">3</div>
+       <h5 class="card-title">Selena Gomez</h5>
+       <p class="card-text">2500 pts</p>
+     </div>
+   </div>
+</div>  
+
+<div class="csize">
+  <div class="card" style=" height:250px;">
+  <div class="clip_img">
+ <img class="card-img-top" src="./assets/three.png" alt="Card image cap" style="" >
+</div>
+<div class="card-body">
+<div class="clip_img_dp">
+<img class="card-img-top" src="./assets/taylor.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
+</div>
+<div class="numberCircle" style="margin-left: 80px; margin-top: -20px;">3</div>
+<h5 class="card-title">Selena Gomez</h5>
+<p class="card-text">2500 pts</p>
+</div>
+</div>
+</div>
+
+
+<div class="csize">
+  <div class="card" style=" height:250px;">
+  <div class="clip_img">
+ <img class="card-img-top" src="./assets/four.png" alt="Card image cap" style="" >
+</div>
+<div class="card-body">
+<div class="clip_img_dp">
+<img class="card-img-top" src="./assets/kylie.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
+</div>
+<div class="numberCircle" style="margin-left: 80px; margin-top: -20px;">3</div>
+<h5 class="card-title">Selena Gomez</h5>
+<p class="card-text">2500 pts</p>
+</div>
+</div>
+</div>
+
+
+<div class="csize">
+  <div class="card" style=" height:250px;">
+  <div class="clip_img">
+ <img class="card-img-top" src="./assets/five.png" alt="Card image cap" style="" >
+</div>
+<div class="card-body">
+<div class="clip_img_dp">
+<img class="card-img-top" src="./assets/beyonce.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
+</div>
+<div class="numberCircle" style="margin-left: 80px; margin-top: -20px;">3</div>
+<h5 class="card-title">Selena Gomez</h5>
+<p class="card-text">2500 pts</p>
+</div>
+</div>
+</div>
+
+
+<div class="csize">
+  <div class="cardsix">
+  <div class="card" style=" height:250px; margin-left: 50px; ">
+  <div class="clip_img">
+ <img class="card-img-top" src="./assets/six.png" alt="Card image cap" style="" >
+</div>
+<div class="card-body">
+<div class="clip_img_dp">
+<img class="card-img-top" src="./assets/justin.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
+</div>
+<div class="numberCircle" style="margin-left: 80px; margin-top: -20px;">3</div>
+<h5 class="card-title">Selena Gomez</h5>
+<p class="card-text">2500 pts</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="csize">
+  <div class="card" style=" height:250px; margin-right :20px;margin-left :-5px;">
+  <div class="clip_img">
+ <img class="card-img-top" src="./assets/seven.png" alt="Card image cap" style="" >
+</div>
+<div class="card-body">
+<div class="clip_img_dp">
+<img class="card-img-top" src="./assets/zayn.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid #1A86FF;">
+</div>
+<div class="numberCircle" style="margin-left: 80px; margin-top: -20px;background-color: #1A86FF;">3</div>
+<h5 class="card-title">Selena Gomez</h5>
+<p class="card-text">2500 pts</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="csize" style="margin-left: -20px;">
+  <div class="card" style=" height:250px;">
+  <div class="clip_img">
+ <img class="card-img-top" src="./assets/eight.png" alt="Card image cap" style="" >
+</div>
+<div class="card-body">
+<div class="clip_img_dp">
+<img class="card-img-top" src="./assets/gigi.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
+</div>
+<div class="numberCircle" style="margin-left: 80px; margin-top: -20px;">3</div>
+<h5 class="card-title">Selena Gomez</h5>
+<p class="card-text">2500 pts</p>
+</div>
+</div>
+</div>
+
+
+          
+       
+      </div>
+
+    </div>
+</body>
+</html>
