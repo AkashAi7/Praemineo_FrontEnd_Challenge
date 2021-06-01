@@ -7,14 +7,32 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body style="background-color: whitesmoke;">
+<body style="background-color: whitesmoke">
 
   <style>
     
     .menu{
-      border-bottom: 1px solid grey;
-     
+    /*  border-bottom: 1px solid grey;*/
+      border-width:3px; 
+      
+      border-bottom-style:groove;
+      margin-left: 20px;
+      margin-right: 20px;
+
+    
     }
+    .menu a{
+        text-decoration: none;
+    }
+
+
+    .menu a:hover {
+        border-bottom: 3px solid rgb(0, 140, 255);
+      }
+      
+      .menu a.active {
+        border-bottom: 3px solid rgb(0, 140, 255);
+      }
       .numberCircle {
           position: absolute;
           border-radius: 50%;
@@ -38,7 +56,7 @@
 
       .clip_img {
          clip-path:inset(7% 5% 1% 7%);
-         width:132px;
+         width:142px;
          height:12em;
          left: -9px;
          margin-top: -8px;
@@ -54,15 +72,39 @@
 
       background-color: white;
       
-      margin: 20px 20px 20px 20px;
+     margin: 50px 20px 20px 20px;
 
      }
      .card{
-       width: 120px;
+       width: 130px;
+     }
+    
+     .bgblock{
+      overflow:hidden;
      }
 
+     .card-header-custom {
+       font-size: 15px;
+    
+    }
+
+    
+    .card-header-custom1 {
+      margin-left: 80px;
+   
+   }
+
+   .card-title{
+    display: flex;
+    justify-content: center;
+       
+   }
+   .card-text{
+       margin-left: 30px;
+   }
 
      @media screen and (max-width:480px) {
+      
         .clip_img{
             float:left;
             display:inline;
@@ -74,68 +116,148 @@
           margin-left:10px;
           margin-bottom: 20px;
           margin-top: -100px;
-          width: 490px;
+          width: 450px;
+          height: 1px;
+        
         }
 
         .clip_img_dp{
             float:left;
             display:inline;
             margin-top:-100px;
-            margin-left: 200px;
+            margin-left: 150px;
            
         }
         .card-title{
             float:left;
             display:inline;
-            margin-left: 400px;
+            margin-left: 300px;
             margin-top: -90px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
 
         }
         .card-text{
             float:left;
             display:inline;
-            margin-left: 400px;
+            margin-left: 315px;
             margin-top: -60px;
+          
 
         }
       
         .card-body{
            margin-bottom: 10px;
+         
             
         }
         .csize{
-            height: 45px;
-            margin-bottom: 50px;
-            width: 400px;
+            height: 35px;
+            margin-bottom: 60px;
+            width: 350px;
         }
         .firstcard{
           margin-left: -20px;
           margin-top: -100px;
         }
         .cardsix{
-          margin-left: -35px;
+          margin-left: -47px;
+          margin-top: 5px;
+        }
+        .cardlast{
+          margin-left: 10px;
+          margin-top: 7px;
+        }
+        .cardlastl{
+          margin-left: 25px;
+          height: 35px;
+          margin-top: 10px;
         }
         .bgblock{
-          height: 900px;
+          height: 1015px;
           width: 500px;
       }
-       }
 
+      .numberCircle {
+        position: absolute;
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+        padding: 8px;
+        top: 70px;
+        left: 150px;
+        
+        background:black;
+       
+        color: white;
+        text-align: center;
+    
+    
+        font: 12px Arial, sans-serif;
+    
+    }
+
+
+  
+
+    .card-header-custom {
+      margin-bottom:75px;
+      margin-left: -100px;
+      font-size: 15px;
      
-  </style>
+     }
+
+     .head2{
+       margin-top: 430px;
+       position: absolute;
+       margin-left: -100px;
+     }
+ 
+     .card-header-custom1 {
+      margin-bottom:75px;
+      margin-left: -10px;
+      font-size: 15px;
+     
+     }
+     .finals {
+      
+       width: 150px;
+        margin-bottom: 95px;
+     }
+
+     .fifth{
+       margin-left: 10px;
+     }
+ 
+ }
+
+
+
+ </style>
+
+
+
   <div class="bgblock">
   <h2 style="padding-top: 50px; padding-left: 40px;font-size:x-large;">Leaderboard  </h2>
   <div class="menu">
-  <nav style="padding-top: 50px; padding-left: 50px;font-size: 20px;">
-    <a href="" style="font-weight:bolder;color:black;">Weekly </a>
-    <a href=""style="font-weight:400;margin-left :40px;color:black;">Monthly</a>
-    <a href=""style="font-weight:400;margin-left :40px;color:black;">Overall</a>
+  <nav style="padding-top: 10px; padding-left: 20px;font-size: 20px;margin-top:30px;">
+   <a href="" style="font-weight:bolder;color:black;">Weekly </a> 
+    <a href=""style="font-weight:400;margin-left :40px;color:black;">Monthly</a> 
+     <a href=""style="font-weight:400;margin-left :40px;color:black;">Overall</a>
   </nav>
   </div>
+
  
-   
-    <div class="card-deck" style="padding-top: 200px;">
-        <div class="csize">
+  
+     <div class="card-header-custom" style="margin-top:40px; margin-left:40px;font-size: 20px; font-weight: 500;">Top 5 Players</div>
+ <!-- </nav> -->
+
+
+  
+    <div class="card-deck" style="padding-top: 30px; float: left;" >
+       <div class="finals">
+                 <div class="csize">
           <div class="firstcard">
         <div class="card" style="margin-left:30px; height:250px;">
                  <div class="clip_img">
@@ -145,14 +267,17 @@
               <div class="clip_img_dp">
                 <img class="card-img-top" src="./assets/selena.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
              </div>
+             <div class="numberCircleC">
             <div class="numberCircle" style="margin-left: 78px; margin-top: -20px;">3</div>
+          </div>
             <h5 class="card-title">Selena Gomez</h5>
             <p class="card-text">2500 pts</p>
            
           </div>
         </div>
       </div>
-    </div>     
+    </div>   
+    </div>  
     <!-- card height trail in the mobile view end  -->
     <div class="csize">
             <div class="card" style=" height:250px;">
@@ -164,7 +289,7 @@
           <img class="card-img-top" src="./assets/ariana.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
         </div>
        <div class="numberCircle" style="margin-left: 80px; margin-top: -20px;">3</div>
-       <h5 class="card-title">Selena Gomez</h5>
+       <h5 class="card-title">Ariana Grande</h5>
        <p class="card-text">2500 pts</p>
      </div>
    </div>
@@ -180,7 +305,7 @@
 <img class="card-img-top" src="./assets/taylor.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
 </div>
 <div class="numberCircle" style="margin-left: 80px; margin-top: -20px;">3</div>
-<h5 class="card-title">Selena Gomez</h5>
+<h5 class="card-title">Taylor Swift</h5>
 <p class="card-text">2500 pts</p>
 </div>
 </div>
@@ -197,7 +322,7 @@
 <img class="card-img-top" src="./assets/kylie.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
 </div>
 <div class="numberCircle" style="margin-left: 80px; margin-top: -20px;">3</div>
-<h5 class="card-title">Selena Gomez</h5>
+<h5 class="card-title">Kylie Jenner</h5>
 <p class="card-text">2500 pts</p>
 </div>
 </div>
@@ -205,7 +330,7 @@
 
 
 <div class="csize">
-  <div class="card" style=" height:250px;">
+  <div class="card" style=" height:250px; position:relative;">
   <div class="clip_img">
  <img class="card-img-top" src="./assets/five.png" alt="Card image cap" style="" >
 </div>
@@ -214,16 +339,21 @@
 <img class="card-img-top" src="./assets/beyonce.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
 </div>
 <div class="numberCircle" style="margin-left: 80px; margin-top: -20px;">3</div>
-<h5 class="card-title">Selena Gomez</h5>
+<div class="fifth"><h5 class="card-title">Beyoncé</h5></div>
 <p class="card-text">2500 pts</p>
+
+</div>
 </div>
 </div>
 </div>
 
-
+<!-- <div class="card-header-custom1" style="margin-top:-10px; margin-left:140px;font-size: 15px;">Top 5 Players</div> -->
+<div class="head2"><div class="card-header-custom1" style="margin-top:-25px; margin-left:120px; font-size: 20px; font-weight: 500;">My Standings</div>
+</div>
+<div class="card-deck" style=" float: left;padding-top:25px;">
 <div class="csize">
   <div class="cardsix">
-  <div class="card" style=" height:250px; margin-left: 50px; ">
+  <div class="card" style=" height:250px; margin-left: 60px; ">
   <div class="clip_img">
  <img class="card-img-top" src="./assets/six.png" alt="Card image cap" style="" >
 </div>
@@ -232,7 +362,7 @@
 <img class="card-img-top" src="./assets/justin.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
 </div>
 <div class="numberCircle" style="margin-left: 80px; margin-top: -20px;">3</div>
-<h5 class="card-title">Selena Gomez</h5>
+<h5 class="card-title">Justin Bieber</h5>
 <p class="card-text">2500 pts</p>
 </div>
 </div>
@@ -244,7 +374,8 @@
 
 
 <div class="csize">
-  <div class="card" style=" height:250px; margin-right :20px;margin-left :-5px;">
+  <div class="cardlast">
+  <div class="card" style=" height:250px; margin-right :20px;margin-left :3px;">
   <div class="clip_img">
  <img class="card-img-top" src="./assets/seven.png" alt="Card image cap" style="" >
 </div>
@@ -253,8 +384,9 @@
 <img class="card-img-top" src="./assets/zayn.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid #1A86FF;">
 </div>
 <div class="numberCircle" style="margin-left: 80px; margin-top: -20px;background-color: #1A86FF;">3</div>
-<h5 class="card-title">Selena Gomez</h5>
+<h5 class="card-title">Zayn Malik</h5>
 <p class="card-text">2500 pts</p>
+</div>
 </div>
 </div>
 </div>
@@ -262,6 +394,7 @@
 
 
 <div class="csize" style="margin-left: -20px;">
+  <div class="cardlastl">
   <div class="card" style=" height:250px;">
   <div class="clip_img">
  <img class="card-img-top" src="./assets/eight.png" alt="Card image cap" style="" >
@@ -271,17 +404,15 @@
 <img class="card-img-top" src="./assets/gigi.jpg" alt="Card image cap" style="border-radius: 50%; width:80px; height:80px; border: 4px solid rgb(0, 0, 0);">
 </div>
 <div class="numberCircle" style="margin-left: 80px; margin-top: -20px;">3</div>
-<h5 class="card-title">Selena Gomez</h5>
+<h5 class="card-title">Gigi Hadid</h5>
 <p class="card-text">2500 pts</p>
 </div>
 </div>
 </div>
+</div>
+  </div>
 
+</div>
 
-          
-       
-      </div>
-
-    </div>
 </body>
 </html>
